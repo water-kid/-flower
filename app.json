@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/post-detail/post-detail",
+    "pages/movie/movie",
+    "pages/movie-more/movie-more",
+    "pages/movie-details/movie-details"
+  ],
+  "tabBar": {
+    "selectedColor": "#333",
+    "color": "#999",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "阅读",
+        "pagePath": "pages/posts/posts",
+        "iconPath": "/images/tab/post.png",
+        "selectedIconPath": "/images/tab/post@highlight.png"
+      },
+      {
+        "text": "电影",
+        "pagePath": "pages/movie/movie",
+        "iconPath": "/images/tab/movie.png",
+        "selectedIconPath": "/images/tab/movie@highlight.png"
+      }
+    ]
+  },
+  "entryPagePath": "pages/welcome/welcome",
+  "window": {
+    "navigationBarBackgroundColor": "#c22a1e"
+  },
+  "usingComponents": {
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

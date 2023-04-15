@@ -1,0 +1,13 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class="container">
+  <!-- image默認尺寸 -->
+  <!-- <image src="/images/1.png" mode="" class="avatar"/> -->
+  <l-avatar style="margin-top: 150rpx;" open-data="{{['userAvatarUrl','userNickName']}}" shape="circle" placement="bottom" size="200"></l-avatar>
+  <text class="motto">hello world</text>
+
+  <!-- <button>開啟小程序之旅</button> -->
+  <view class="button">
+    <text bind:tap="onTap" >開啟小程序之旅</text>
+  </view>
+</view>

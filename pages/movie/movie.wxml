@@ -1,0 +1,4 @@
+<!--pages/movie/movie.wxml-->
+<movieList type="in_theaters" title="正在上映" f-container-class="movie-list"  movieList="{{ inTheaters}}"/>
+<movieList type="coming_soon" title="即将上映" f-container-class="movie-list" movieList="{{ comingSoon}}"/>
+<movieList type="top250"  title="豆瓣Top250"  f-container-class="movie-list" movieList="{{ top250}}"/>

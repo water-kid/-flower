@@ -1,0 +1,22 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  
+  <swiper vertical="{{ false }}" indicator-dots  autoplay circular interval="{{ 2000 }}">
+    <swiper-item data-post-id="0" bind:tap="handleJumpToDetail">
+      <image src="/images/bestplayers.png" mode=""/>
+    </swiper-item>
+    <swiper-item data-post-id="1" bind:tap="handleJumpToDetail">
+      <image src="/images/lpl.png" mode=""/>
+    </swiper-item>
+    <swiper-item data-post-id="2" bind:tap="handleJumpToDetail">
+      <image src="/images/jumpfly.png" mode=""/>
+    </swiper-item>
+  </swiper>
+
+
+
+  <block wx:for="{{ postList }}" wx:for-item="item" wx:for-index="index" wx:key="postId">
+    <post item="{{item}}" bind:tapDetails="handleJumpToDetail"></post>
+</block>
+
+</view>
